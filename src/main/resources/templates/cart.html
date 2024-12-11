@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+<table>
+    <tr>
+        <td>순번</td>
+        <td>내용</td>
+    </tr>
+
+
+    <tr th:each="item  : ${list}">
+        <td></td>
+        <td th:text="${item}">항목</td>
+    </tr>
+
+</table>
+
+
+
+</body>
+</html>
